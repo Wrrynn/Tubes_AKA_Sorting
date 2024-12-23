@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Data Mahasiswa</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-2">
+    <div class="container">
+        <header>
+            <h1>Sorting Nilai Mahasiswa</h1>
+        </header>
+
+        <section class="input-section">
+            <div class="form-group">
+                <label for="jumlahData">Masukkan Jumlah Data Mahasiswa:<br ?</label>
+                <input type="number" id="jumlahData" min="1" max="1000" value="10" class="input-field">
+            </div>
+            <div class="button-group">
+                <button class="btn" onclick="generateData()">Generate Data</button>
+                <button class="btn" onclick="sortData()">Sort Data</button>
+            </div>
+        </section>
+
+        <section id="chart-section" class="chart-section">
+            <h3>Perbandingan Waktu Eksekusi:</h3>
+            <canvas id="executionGraph" width="600" height="400"></canvas>
+        </section>
+
+        <section id="output" class="output-section">
+            <h3 class="left">Waktu Eksekusi:</h3>
+            <ul class="left" id="time1"></ul>
+            <ul class="left" id="time2"></ul>
+            <ul class="left" id="time3"></ul>
+        </section>
+
+        <section id="output" class="output-section">
+            <h3>10 Nama Mahasiswa dengan Nilai Teratas:</h3>
+            <ul id="result"></ul>
+        </section>
+
+        <section id="output" class="output-section">
+            <h3>Daftar Mahasiswa</h3>
+            <ul id="hasil"></ul>
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
